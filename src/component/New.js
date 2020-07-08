@@ -25,6 +25,7 @@ const New = () => {
             body: JSON.stringify({ title: title, text: text }),
         });
         const data = await response.json();
+        console.log(data);
 
         history.push("/posts");
     };

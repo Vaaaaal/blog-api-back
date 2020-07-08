@@ -12,6 +12,7 @@ const List = () => {
             method: "DELETE",
         });
         const data = await response.json();
+        console.log(data);
 
         history.go();
     };
